@@ -2,6 +2,8 @@ import React from 'react';
 import Header from './Header';
 import List from './List';
 
+import './TodoList.css';
+
 export default function TodoList(props) {
 
     const {name,list} = props.data

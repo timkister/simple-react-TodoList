@@ -6,8 +6,8 @@ class StateProvider extends React.Component {
     constructor() {
         super()
         this.state = {
-            name: "Test",
-            list: ["1","2"]
+            name: "Tagesplan",
+            list: ["Einkaufen gehen","Mit Mia spazieren gehen"]
         }
     }
 

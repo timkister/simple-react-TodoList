@@ -1,15 +1,25 @@
 import React from "react";
 
+import './List.scss';
+
 export default function List(props) {
 
     const list = props.list
 
+    // return(
+    //     <ul>
+    //         
+    //     </ul>
+    // ) 
+
     return(
-        <ul>
+        <div id="checklist">
             {list.map(function(item){
-                return <li>{item}</li>}
+                return(
+                    [<input id={item} type="checkbox" name="r" value="1" />,<label for={item}>{item}</label>]
+                )}
             )}
-        </ul>
-    ) 
+        </div>
+    )
         
 }
